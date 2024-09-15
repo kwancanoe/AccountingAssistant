@@ -28,31 +28,51 @@ const data = {
     level5: [
         // For 'Cloud Vat เงินสด'
         { id: 1, parentId: 1, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 2, parentId: 1, data: 'ทรัพย์สิน' },
+        { id: 2, parentId: 1, data: 'ภาษีซื้อ' },
         // For 'Cloud Non Vat เงินสด'
         { id: 3, parentId: 2, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 4, parentId: 2, data: 'ทรัพย์สิน' },
         // For 'Cloud Vat เงินเชื่อ'
-        { id: 5, parentId: 3, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 6, parentId: 3, data: 'ทรัพย์สิน' },
+        { id: 4, parentId: 3, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
+        { id: 5, parentId: 3, data: 'ภาษีซื้อ' },
         // For 'Cloud Non Vat เงินเชื่อ'
-        { id: 7, parentId: 4, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 8, parentId: 4, data: 'ทรัพย์สิน' },
+        { id: 6, parentId: 4, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
         // For 'Notebook มายิง Ads (Vat เงินสด)'
-        { id: 9, parentId: 5, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 10, parentId: 5, data: 'ทรัพย์สิน' },
+        { id: 7, parentId: 5, data: 'ทรัพย์สิน' },
+        { id: 8, parentId: 5, data: 'ภาษีซื้อ' },
+        // For 'Notebook มายิง Ads (Non Vat เงินสด)'
+        { id: 9, parentId: 6, data: 'ทรัพย์สิน' },
+        // For 'Notebook มายิง Ads (Vat เงินเชื่อ)'
+        { id: 10, parentId: 7, data: 'ทรัพย์สิน' },
+        { id: 11, parentId: 7, data: 'ภาษีซื้อ' },
+        // For 'Notebook มายิง Ads (Non Vat เงินเชื่อ)'
+        { id: 12, parentId: 8, data: 'ทรัพย์สิน' },
         // For 'ซื้อกระดาษ A4 (Vat เงินสด)'
-        { id: 11, parentId: 9, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
-        { id: 12, parentId: 9, data: 'ทรัพย์สิน' }
+        { id: 13, parentId: 9, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
+        { id: 14, parentId: 9, data: 'ภาษีซื้อ' },
+        // For 'ซื้อกระดาษ A4 Non Vat เงินสด'
+        { id: 15, parentId: 10, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
+        // For 'ซื้อกระดาษ A4 Vat เงินเชื่อ'
+        { id: 16, parentId: 11, data: 'ค่าใช้จ่ายในการผลิด/บริการ' },
+        { id: 17, parentId: 11, data: 'ภาษีซื้อ' },
+        // For 'ซื้อกระดาษ A4 Non Vat เงินเชื่อ'
+        { id: 18, parentId: 12, data: 'ค่าใช้จ่ายในการผลิด/บริการ' }
     ],
     level6: [
         // For 'ค่าใช้จ่ายในการผลิด/บริการ'
         { id: 1, parentId: 1, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
-        { id: 2, parentId: 1, data: 'ภาษีซื้อ' },
-        { id: 3, parentId: 2, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
-        { id: 4, parentId: 3, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
-        { id: 5, parentId: 4, data: 'ภาษีหัก ณ ที่จ่าย' },
-        { id: 6, parentId: 5, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
-        { id: 7, parentId: 7, data: 'ภาษีซื้อ' }
+        { id: 2, parentId: 2, data: 'ภาษีหัก ณ ที่จ่าย' },
+        { id: 3, parentId: 3, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
+        { id: 4, parentId: 4, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
+        { id: 5, parentId: 5, data: 'ภาษีหัก ณ ที่จ่าย' },
+        { id: 6, parentId: 6, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
+        // For 'ทรัพย์สิน'
+        { id: 7, parentId: 7, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
+        { id: 8, parentId: 9, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
+        { id: 9, parentId: 10, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
+        { id: 10, parentId: 12, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
+        // For 'ค่าใช้จ่ายในการผลิด/บริการ'
+        { id: 11, parentId: 13, data: 'เงินสด/ธนาคาร (ซื้อสด)' },
+        { id: 12, parentId: 16, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' },
+        { id: 13, parentId: 18, data: 'เจ้าหนี้การค้า (ซื้อเชื่อ)' }
     ]
 };
