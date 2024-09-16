@@ -1,6 +1,6 @@
 {
-    "name": "Hierarchical Dropdown PWA",
-    "short_name": "Dropdown PWA",
+    "name": "Accounting Assistant",
+    "short_name": "Accounting Assistant",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
